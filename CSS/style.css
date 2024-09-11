@@ -1,0 +1,732 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+@media only screen and (max-width:1200px) {
+    /* For tablets: */
+    .stars {
+      width: 80%;
+      padding: 0;
+    }
+    .home-page {
+      width: 100%;
+    }
+    .home-page .section-home{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .section-subscibe{
+      width: 500px;
+    }
+    .section-subscibe .sec{
+      text-align: center;
+      width: 400px;
+      }
+    .section-subscibe .sec h3{
+      font-size: 20px;
+  }
+  .home-page .contact .touch  input{
+    padding: 15px;
+    border-radius: 25px;
+    width: 150px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+ }
+ 
+}
+  @media only screen and (max-width:590px) {
+    /* For mobile phones: */
+    .home-page{
+        width: 100%   ;
+    }
+   .home-page .section-home .names {
+      width:90%;
+    }
+    .home-page .section-home{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .home-page .section-home .image img{
+        width: 500px;
+        height: 500px;
+  }
+  .home-page .section-home .names{
+    width: 500px;
+    margin-left: 100px;
+  }
+  .names p{
+    width: 450px;
+
+  }
+  .home-page .section-home .names h1{
+    width: 450px;
+    font-size:40px;
+    padding: 6px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, serif;
+    
+}
+
+.home-page .subscibe .section-subscibe .sub{
+  width:300px ;
+  height: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.home-page .subscibe .section-subscibe .sub .btn{
+  width:150px;
+}
+
+.home-page .subscibe .section-subscibe{
+  width: 500px;
+}
+.home-page .section-subscibe .sec{
+  text-align: center;
+  width: 300px;
+  }
+.section-subscibe .sec h3{
+  font-size: 15px;
+}
+.home-page .contact .touch  textarea{
+  margin-left: 15px;
+  width: 350px;
+  height: 300px;
+  padding: 15px;
+
+}
+.section-Skills{
+  height: 70%;
+  background: linear-gradient(to top,#ffffff00,#121212ca);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* box-shadow: 20px 10px 20px #121212,-20px 10px 20px #121212 ; */
+  
+}
+
+.home-page .section-Skills .flex-skills {
+  background-color: #100d15;
+  border-radius: 50px;
+  height: 100%;
+  width:400px;
+}
+.home-page .section-Skills .flex-skills .Skills .proress .cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .section-Skills .cardED{
+  width: 300px;
+  height: 225px;
+  background-color:#ffffff00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+}
+.home-page .section-Skills .cardED .cardED .image{
+  height: 150px;
+  width: 150px;
+}
+  
+.home-page .section-Skills .cardED .cardED .progressbar{
+  width: 250px;
+  height:15px; 
+  background-color: #e8e8e8;
+  border-radius: 50px;
+}
+
+  .home-page .section-Skills .flex-skills .Skills .proress .carousel-control-prev,.carousel-control-next{
+ align-self: flex-end;
+ justify-content: center;
+ align-items: center;
+ margin: 10px 30px;
+}
+.section-Skills .flex-skills h1{
+  text-align: center;
+  padding: 15px;
+  }
+  .section-Skills .flex-skills .Skills p{
+      text-align: center;
+      width: 300px;
+      font-size: small;
+      }
+
+  }
+
+.home-page{
+    height: 100%;
+    background: radial-gradient(ellipse at bottom,#7E57C2,#121212);
+}
+#cat{
+  position: absolute;
+  animation: cat 20s linear infinite;
+}
+
+/* header */
+header{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    
+}
+header h1{
+  font-size: 70px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fdf;
+ background-image: url(../image/back.png);
+ -webkit-background-clip: text;
+ background-position: 0 0;
+ animation: back 20s linear infinite;
+}
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+nav a{
+    padding: 15px;
+    text-decoration: none;
+     color: white;
+}
+nav a:hover{
+    text-decoration: none;
+    color: #7E57C2;
+}
+/* section-home */
+.home-page .section-home{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    padding:  50px;
+    background: linear-gradient(to bottom,#ffffff00,#121212ca);
+
+}
+.home-page .section-home img{
+  position: relative;
+  animation:image 3s linear infinite;
+}
+
+@keyframes image {
+  0%   { left: 0px; right:0px;}
+  25%  { left:30px; right:0px;}
+  50%  { left:30px; right:30px;}
+  75%  { left:0px; right:30px;}
+  100% { left:0; right:0;}
+}
+
+.home-page .section-home .names{
+    width: 600px;
+    padding: 15px;
+    position: relative;
+}
+.home-page .section-home h1 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, serif;
+    padding: 15px 0;
+}
+.home-page .section-home p{
+    line-height: 30px;
+    padding: 15px 0;
+}
+.section-home img{
+    width:600px;
+    height: 600px;
+}
+
+
+.stars{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.stars .star{
+    position: fixed;
+    animation: animate-star 16s linear infinite;
+}
+
+.stars .star i{
+    color: rgba(255, 255, 255, 0.867);
+}
+.stars .star:nth-child(1){
+    left: 90px;
+    animation-delay: 5.4s;
+    top: 15%;
+    transition: 4s;
+}
+.stars .star:nth-child(2){
+    left: 5%;
+    animation-delay: 6.8s;
+    top: 40%;
+}
+
+.stars .star:nth-child(3){
+    left: 20%;
+    animation-delay: 5s;
+    top: 15%;
+}
+.stars .star:nth-child(4){
+    left:26%;
+    animation-delay:4s;
+    top: 67%;
+}
+
+.stars .star:nth-child(5){
+    left: 40%;
+    animation-delay: 5.2s;
+    top: 85%;
+}
+.stars .star:nth-child(6){
+    left: 50%;
+    animation-delay:4.5s;
+    top: 23%;
+}
+.stars .star:nth-child(7){
+    left: 60%;
+    animation-delay: 7s;
+    top: 65%;
+}
+.stars .star:nth-child(8){
+    left: 70%;
+    animation-delay: 3.5s;
+    top: 12%;
+}
+.stars .star:nth-child(9){
+    left: 80%;
+    animation-delay: 7s;
+    top: 75%;
+}
+.stars .star:nth-child(10){
+    left: 90%;
+    animation-delay: 3.5s;
+    top: 14%;
+}
+.stars .star:nth-child(11){
+    left: 70px;
+    animation-delay: 5s;
+    top: 80%;
+}
+
+.stars .star:nth-child(12){
+    left: 95%;
+    animation-delay: 4s;
+    top: 90%;
+}
+.stars .star:nth-child(13){
+    left: 75%;
+    animation-delay: 6s;
+    top: 40%;
+}
+.stars .star:nth-child(14){
+    left: 40%;
+    animation-delay: 6.5s;
+    /* top: 0; */
+}
+
+
+@keyframes animate-star{
+    0%,20%,40%,60%,100%{opacity: 0;}
+    50%{opacity: 0;}
+    10%,30%,50%,70%,90%{opacity: 1;}
+}
+
+.section-home .names i{
+    padding: 15px;
+    position: relative;
+    animation: hand 4s linear infinite;
+}
+
+@keyframes hand {
+  0%   { transform: rotateZ(-30deg)}
+  25%  { transform: rotateZ(30deg)}
+  50%  { transform: rotateZ(-30deg)}
+  75%  { transform: rotateZ(30deg)}
+  100% { transform: rotateZ(-30deg)}
+}
+
+
+/* section-Skills */
+.section-Skills{
+    height: 70%;
+    background: linear-gradient(to top,#ffffff00,#121212ca);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* box-shadow: 20px 10px 20px #121212,-20px 10px 20px #121212 ; */
+    
+}
+
+.section-Skills .flex-skills{
+    background-color: #100d15;
+    border-radius: 50px;
+    height: 60%;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-Skills .flex-skills h1{
+text-align: center;
+padding: 15px;
+}
+.section-Skills .flex-skills .Skills p{
+    text-align: center;
+    width: 600px;
+    }
+ 
+
+    /* contact*/
+ .contact{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    flex-wrap: wrap;
+ }
+ .contact .touch{
+    width: 800px;
+    padding: 15px;
+    /* background-image: url(../image/1_cfmRtbFOaB8q1Icn8EBsjw.png); */
+ }
+ .contact .touch h1{
+    margin-left: 15px;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .contact .touch  form{
+    backdrop-filter:blur(10px) ;
+ }
+ .contact .touch  input{
+    padding: 15px;
+    border-radius: 25px;
+    width: 350px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    background-color: #12121200;
+    box-shadow: 8px 5px 8px #12121288, -8px 5px 15px #12121288;
+    border: 1px solid #12121200;
+    color: white;
+ }
+ .contact .touch  textarea{
+    margin-left: 15px;
+    width: 750px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #12121200;
+    box-shadow: 8px 5px 8px  #1212126d, -8px 5px 8px  #12121288;
+    border: 1px solid #12121200;
+    color: white;
+
+ }
+ .contact .touch  textarea[placeholder]{
+    color: white;
+    
+}
+ .contact .touch button{
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid #12121200;
+    font-family: cursive;
+    background-color: #9a9a9ab9;
+
+ }
+ .contact .image{
+  width: 500px;
+  height: 500px;
+  background-image: url(../image/Contact\ us-rafiki.png);
+  background-size: 100% 100%;
+ }
+.cards{
+    display: flex;
+}
+ .cardED{
+    width: 300px;
+    height: 325px;
+    background-color:#ffffff00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+.cardED .image{
+    height: 300px;
+    width: 300px;
+}
+    
+  .progressbar{
+    width: 250px;
+    height:25px; 
+    background-color: #e8e8e8;
+    border-radius: 50px;
+  }
+  
+  .bar1{
+    width: 90%;
+    height: 100%; 
+    background-color: #7E57C2;
+    position: relative;
+    border-radius: 50px;
+    animation: pro1 1s ease-in-out forwards
+  }
+  @keyframes pro1 {
+    0%   { width: 0;}
+    100%  { width:90%;}
+   }
+   .bar2{
+    width: 90%;
+    height: 100%; 
+    background-color: #7E57C2;
+    position: relative;
+    border-radius: 50px;
+    animation: pro2 1s ease-in-out forwards
+  }
+  @keyframes pro2{
+    0%   { width: 0;}
+    100%  { width:95%;}
+   }
+   .bar3{
+    width: 65%;
+    height: 100%; 
+    background-color: #7E57C2;
+    position: relative;
+    border-radius: 50px;
+    animation: pro3 1s ease-in-out forwards
+  }
+  @keyframes pro3{
+    0%   { width: 0;}
+    100%  { width:65%;}
+   }
+   .bar4{
+    width: 70%;
+    height: 100%; 
+    background-color: #7E57C2;
+    position: relative;
+    border-radius: 50px;
+    animation: pro4 1s ease-in-out forwards
+  }
+  @keyframes pro4{
+    0%   { width: 0;}
+    100%  { width:70%;}
+   }
+   .bar5{
+    width: 50%;
+    height: 100%; 
+    background-color: #7E57C2;
+    position: relative;
+    border-radius: 50px;
+    animation: pro5 1s ease-in-out forwards
+  }
+  @keyframes pro5{
+    0%   { width: 0;}
+    100%  { width:50%;}
+   }
+   .bar6{
+    width: 30%;
+    height: 100%; 
+    background-color: #7E57C2;
+    position: relative;
+    border-radius: 50px;
+    animation: pro6 1s ease-in-out forwards
+  }
+  @keyframes pro6{
+    0%   { width: 0;}
+    100%  { width:30%;}
+   }
+
+   .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    height: 100%;
+    background-color: #100d15ec;
+    backdrop-filter: blure(20px);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddddddd7;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  /* projects */
+  .setion-projects{
+  height: 100%;
+  padding: 30px;
+  }
+
+  .setion-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 30px;
+  }
+.setion-projects .GetHupe{
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid #100d15;
+    background: radial-gradient(ellipse at top,#7E57C2,#121212);
+    
+}
+
+.setion-projects #myBtnContainer{
+  width: 350px;
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  background-color: #100d15;
+
+}
+ 
+/* section subscibe */
+.subsicrbe{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom,#ffffff00,#121212ca);
+}
+.section-subscibe{
+  width: 700px;
+  border-radius: 30px;
+  height: 100%;
+  background-color:#d2d2d2;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-subscibe .sec{
+text-align: center;
+width: 600px;
+}
+.section-subscibe .sub{
+  width:100% ;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #abbba0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.section-subscibe .sub .btn{
+  width:20% ;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #7E57C2 ;
+ align-self: center;
+ color: white;
+}
+
+/* footer */
+footer{
+  height: 100%;
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #100d15;
+   padding: 40px;
+}
+footer .social{
+  width: 200px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+footer  i:hover{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  transform: rotateZ(360deg);
+  transition: 1.5s;
+}
+
+footer h1{
+  font-size: 70px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fdf;
+ background-image: url(../image/back.png);
+ -webkit-background-clip: text;
+ background-position: 0 0;
+ animation: back 20s linear infinite;
+}
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
